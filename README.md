@@ -10,3 +10,16 @@
 
 В **main.py** находится скрипт бота.
 В **ML_model** находится модель прогнозирования цены акции. Используется модель ARIMA.
+
+ToDo:
+Backend
+1) Handling incorrect tickers;
+2) Improve ML models (Boosting, NN, RF, ARIMA tuning);
+3) Pipenv and Pipenv.lock (or requirements.txt);
+
+Front-end
+1) Flask and Waitress;
+2) Add Docker-container and docker compose (docker-compose), add docker file into repo;
+3) Include MongoDB.
+
+Cool example: https://github.com/karan19100/Whatsapp-Stock-Market-Chat-Bot
