@@ -15,7 +15,8 @@ ToDo:
 Backend
 1) Handling incorrect tickers;
 2) Improve ML models (Boosting, NN, RF, ARIMA tuning);
-3) Pipenv and Pipenv.lock (or requirements.txt);
+3) TimeSeriesSplit (CV);
+4) Pipenv and Pipenv.lock (or requirements.txt);
 
 Front-end
 1) Flask and Waitress;
