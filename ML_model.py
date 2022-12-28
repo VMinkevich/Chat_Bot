@@ -17,6 +17,8 @@ def get_data(ticker):
     else:
         return 'None'
 
+def validation():
+    pass
 
 def get_prediction(stock):
     start = str(datetime.date(2018, 1, 1))
@@ -41,7 +43,7 @@ def get_prediction(stock):
 
     predict_value = ARIMAmodel.predict(len(stock) + 1)
 
-    return 'Цена на послезавтра: ' + str(predict_value.values[0])
+    return 'Цена на следующий торговый день: ' + str(round(predict_value.values[0], 2))
 
-# if __name__ == '__main__':
-#     print(get_prediction(get_data('GOOG')))
+if __name__ == '__main__':
+    print(get_prediction(get_data('GOOG')))
